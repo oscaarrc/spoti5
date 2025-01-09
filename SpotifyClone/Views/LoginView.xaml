@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SpotifyClone.ViewModels"
+             x:Class="SpotifyClone.Views.LoginView"
+             BackgroundColor="Black">
+
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+            
+            <!-- Título -->
+            <Image Source="sponify_titulo.png"
+                   HorizontalOptions="Center"
+                   WidthRequest="200" />
+
+            <!-- Logo -->
+            <Image Source="sponify_logo.png"
+                   HorizontalOptions="Center"
+                   WidthRequest="150" />
+
+
+            <Image Source="sponify_login.png"
+                   HorizontalOptions="Center"
+                   WidthRequest="200" />
+
+            <!-- Username -->
+            <VerticalStackLayout>
+
+                <Image Source="sponify_usuario.png"
+                       HorizontalOptions="Center"
+                       WidthRequest="100"/>
+                <Entry x:Name="usuario"
+                       Placeholder="Nombre de usuario"
+                       TextColor="Green"
+                       PlaceholderColor="Gray"
+                       BackgroundColor="Transparent"
+                       FontSize="14"
+                       HorizontalOptions="Center"
+                       Text="{Binding Username}" />
+            </VerticalStackLayout>
+
+            <!-- Password -->
+            <VerticalStackLayout>
+
+                <Image Source="sponify_contrasena.png"
+                       HorizontalOptions="Center"
+                       WidthRequest="100"/>
+                <Entry x:Name="password"
+                       Placeholder="Contraseña"
+                       TextColor="Green"
+                       PlaceholderColor="Gray"
+                       BackgroundColor="Transparent"
+                       IsPassword="True"
+                       FontSize="14"
+                       HorizontalOptions="Center" 
+                       Text="{Binding Password}" />
+                
+            </VerticalStackLayout>
+
+            <!-- Login -->
+            <Button Text="Login"
+                    TextColor="Green"
+                    BorderColor="Green"
+                    BorderWidth="2"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    HeightRequest="40"
+                    Command="{Binding LoginCommand}" />
+
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <!-- Crear Cuenta -->
+                <Label Text="¿No tienes cuenta? "
+                   TextColor="White"
+                   VerticalOptions="Center" />
+
+                <Button Text="Crear cuenta"
+                    TextColor="Green"
+                    Command="{Binding NavigateToCreateAccountCommand}"
+                    BackgroundColor="Transparent"
+                    BorderWidth="0" />
+            </StackLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

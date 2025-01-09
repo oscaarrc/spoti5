@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SpotifyClone.ViewModels"
+             x:Class="SpotifyClone.Views.MainView">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        
+        <!-- Contenedor principal con una estructura de barra de búsqueda, lista de canciones y footer -->
+        <Grid BackgroundColor="#2B2B2B">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Barra de búsqueda -->
+            <Grid Grid.Row="0" BackgroundColor="#2B2B2B" Padding="10">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    
+                    <!-- Icono de búsqueda -->
+                    <Image Source="lupa.png"
+                           WidthRequest="44"
+                           HeightRequest="34"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"/>
+                    
+                    <!-- Searchbar -->
+                    <Entry Placeholder="Buscar canciones..."
+                           Text="{Binding SearchWord, Mode=TwoWay}"
+                           IsSpellCheckEnabled="False"
+                           HorizontalOptions="FillAndExpand"
+                           BackgroundColor="LightGray"
+                           Margin="10,0"/>
+                    
+                    <!-- Buscar canción -->
+                    <Button Text="Buscar"
+                            BackgroundColor="#1DB954"
+                            Command="{Binding SearchCommand}"
+                            WidthRequest="100"
+                            HorizontalOptions="End"
+                            Margin="10,0"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Contenido principal: Lista de canciones -->
+            <ScrollView Grid.Row="1" Margin="10,5">
+                <CollectionView ItemsSource="{Binding Tracks}" 
+                                 Margin="0"
+                                 VerticalOptions="FillAndExpand">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            
+                            <!-- Frame para cada canción (track) -->
+                            <Frame BackgroundColor="#1DB954" 
+                                   CornerRadius="8" 
+                                   Padding="10" 
+                                   Margin="5"
+                                   HasShadow="True">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <!-- Imagen y el texto -->
+                                        <ColumnDefinition Width="Auto" />
+                                        <!-- Botón de reproducción -->
+                                        <ColumnDefinition Width="Auto" />
+                                        <!-- Botón de favoritos -->
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Contenedor de Imagen y Texto -->
+                                    <HorizontalStackLayout Grid.Column="0" Spacing="10" VerticalOptions="Center">
+                                        <Image Source="{Binding Album.Images[0].Url}"
+                                               HeightRequest="60"
+                                               WidthRequest="60"
+                                               Aspect="AspectFill"
+                                               HorizontalOptions="Start"/>
+
+                                        <VerticalStackLayout VerticalOptions="Center" Spacing="4">
+                                            <!-- Nombre de la canción -->
+                                            <Label Text="{Binding Name}" 
+                                                   FontSize="16" 
+                                                   TextColor="White" 
+                                                   HorizontalOptions="Start" />
+                                            <!-- Nombre del artista -->
+                                            <Label Text="{Binding Artists[0].Name}" 
+                                                   FontSize="12"
+                                                   TextColor="LightGray"
+                                                   HorizontalOptions="Start" />
+                                        </VerticalStackLayout>
+                                        
+                                    </HorizontalStackLayout>
+
+                                    <!-- Botón de reproducción -->
+                                    <Button Grid.Column="1" 
+                                    ImageSource="play.png"
+                                    BackgroundColor="Transparent"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MainViewModel}}, Path=PlayCommand}"
+                                    CommandParameter="{Binding .}"
+                                    HeightRequest="60"
+                                    WidthRequest="60"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center"/>
+                                    
+                                    
+                                    <!-- Botón de favoritos -->
+                                    <Button Grid.Column="2" 
+                                            x:Name="favoriteButton" 
+                                            BackgroundColor="Transparent"
+                                            HeightRequest="60"
+                                            WidthRequest="60"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="Center"
+                                            ImageSource="favorito.png"
+                                            Command="{Binding AddToFavouritesCommand}"
+                                            CommandParameter="{Binding .}"
+                                            >
+                                    </Button>
+                                </Grid>
+                            </Frame>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+
+            <!-- Footer -->
+            <Grid Grid.Row="2" Padding="10" BackgroundColor="#2B2B2B">
+                <!-- Iconos en el footer: Favorito, Buscar, Usuario -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Usuario -->
+                <Button Grid.Column="0" 
+                       ImageSource="user.png"
+                       WidthRequest="55" HeightRequest="55"
+                       BackgroundColor="Transparent"
+                       HorizontalOptions="Center" VerticalOptions="Center"
+                        Command="{Binding NavigateToProfileViewCommand}"/>
+                <!-- Buscar -->
+                <Button Grid.Column="1" 
+                       ImageSource="lupa.png"
+                       WidthRequest="55" HeightRequest="55"
+                       BackgroundColor="Transparent"
+                       HorizontalOptions="Center" VerticalOptions="Center"/>
+                <!-- Favorito -->
+                <Button Grid.Column="2" 
+                       ImageSource="favorito.png"
+                       BackgroundColor="Transparent"
+                       WidthRequest="55" HeightRequest="55"
+                       HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,68 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SpotifyClone
+build_property.ProjectDir = D:\DAM\ADE\SpotifyClone\SpotifyClone\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/Views/CreateAccountView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.Views.CreateAccountView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CreateAccountView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CreateAccountView.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/Views/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.Views.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginView.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/Views/MainView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.Views.MainView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainView.xaml
+
+[D:/DAM/ADE/SpotifyClone/SpotifyClone/Views/ProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SpotifyClone.Views.ProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfileView.xaml

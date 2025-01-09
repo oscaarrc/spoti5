@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpotifyClone</name>
+    </assembly>
+    <members>
+        <member name="T:SpotifyClone.Models.Album">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.Album.Id">
+            <inheritdoc cref="F:SpotifyClone.Models.Album.id"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Album.Name">
+            <inheritdoc cref="F:SpotifyClone.Models.Album.name"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Album.Images">
+            <inheritdoc cref="F:SpotifyClone.Models.Album.images"/>
+        </member>
+        <member name="T:SpotifyClone.Models.Artist">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.Artist.Id">
+            <inheritdoc cref="F:SpotifyClone.Models.Artist.id"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Artist.Name">
+            <inheritdoc cref="F:SpotifyClone.Models.Artist.name"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Artist.Uri">
+            <inheritdoc cref="F:SpotifyClone.Models.Artist.uri"/>
+        </member>
+        <member name="T:SpotifyClone.Models.ExternalUrls">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.ExternalUrls.Spotify">
+            <inheritdoc cref="F:SpotifyClone.Models.ExternalUrls.spotify"/>
+        </member>
+        <member name="T:SpotifyClone.Models.Image">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.Image.Url">
+            <inheritdoc cref="F:SpotifyClone.Models.Image.url"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Image.Height">
+            <inheritdoc cref="F:SpotifyClone.Models.Image.height"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Image.Width">
+            <inheritdoc cref="F:SpotifyClone.Models.Image.width"/>
+        </member>
+        <member name="T:SpotifyClone.Models.SpotifyResult">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.SpotifyResult.Tracks">
+            <inheritdoc cref="F:SpotifyClone.Models.SpotifyResult.tracks"/>
+        </member>
+        <member name="T:SpotifyClone.Models.Token">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.Token.AccessToken">
+            <inheritdoc cref="F:SpotifyClone.Models.Token.accessToken"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Token.TokenType">
+            <inheritdoc cref="F:SpotifyClone.Models.Token.tokenType"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Token.ExpiresIn">
+            <inheritdoc cref="F:SpotifyClone.Models.Token.expiresIn"/>
+        </member>
+        <member name="T:SpotifyClone.Models.Track">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.Id">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.id"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.Name">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.name"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.DurationMs">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.durationMs"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.Album">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.album"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.Images">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.images"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.Artists">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.artists"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.PreviewUrl">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.previewUrl"/>
+        </member>
+        <member name="P:SpotifyClone.Models.Track.Uri">
+            <inheritdoc cref="F:SpotifyClone.Models.Track.uri"/>
+        </member>
+        <member name="T:SpotifyClone.Models.TrackResult">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.Models.TrackResult.Items">
+            <inheritdoc cref="F:SpotifyClone.Models.TrackResult.items"/>
+        </member>
+        <member name="T:SpotifyClone.ViewModels.MainViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpotifyClone.ViewModels.MainViewModel.Tracks">
+            <inheritdoc cref="F:SpotifyClone.ViewModels.MainViewModel._tracks"/>
+        </member>
+        <member name="P:SpotifyClone.ViewModels.MainViewModel.SearchWord">
+            <inheritdoc cref="F:SpotifyClone.ViewModels.MainViewModel._searchWord"/>
+        </member>
+        <member name="P:SpotifyClone.ViewModels.MainViewModel.FavoriteButtonSource">
+            <inheritdoc cref="F:SpotifyClone.ViewModels.MainViewModel._favoriteButtonSource"/>
+        </member>
+        <member name="P:SpotifyClone.ViewModels.MainViewModel.IsFavorite">
+            <inheritdoc cref="F:SpotifyClone.ViewModels.MainViewModel._isFavorite"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Images">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Images" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Uri">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Uri" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Spotify">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Spotify" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Url">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Url" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Height">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Height" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Width">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Width" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tracks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tracks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AccessToken">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AccessToken" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TokenType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TokenType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ExpiresIn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ExpiresIn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DurationMs">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DurationMs" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Album">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Album" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Artists">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Artists" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PreviewUrl">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PreviewUrl" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SearchWord">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SearchWord" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FavoriteButtonSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FavoriteButtonSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsFavorite">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsFavorite" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Images">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Images" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Uri">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Uri" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Spotify">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Spotify" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Url">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Url" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Height">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Height" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Width">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Width" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tracks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tracks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AccessToken">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AccessToken" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TokenType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TokenType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ExpiresIn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ExpiresIn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DurationMs">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DurationMs" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Album">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Album" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Artists">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Artists" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PreviewUrl">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PreviewUrl" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SearchWord">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SearchWord" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FavoriteButtonSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FavoriteButtonSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsFavorite">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsFavorite" generated properties.</summary>
+        </member>
+    </members>
+</doc>

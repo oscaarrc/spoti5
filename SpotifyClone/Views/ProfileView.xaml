@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SpotifyClone.ViewModels"
+             x:Class="SpotifyClone.Views.ProfileView">
+    
+    <ContentPage.BindingContext>
+        <vm:ProfileViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="#2B2B2B">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Contenido principal -->
+            <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,130,0,0">
+
+                <Image Source="default_pfp.png"
+                       HeightRequest="150" 
+                       WidthRequest="150"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Center"
+                />
+
+                <!-- UserName -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="{Binding UserName}"
+                           FontSize="32"
+                           TextColor="White"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           Margin="13,10,0,0" />
+                    <Image Source="editar.png" 
+                           HeightRequest="15"
+                           WidthRequest="15"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           Margin="9,0,0,0" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+                    <Label Text="Canciones favoritas: " 
+                           FontSize="15"
+                           TextColor="White"
+                           FontFamily=""
+                           HorizontalOptions="Center" />
+                    <Label Text="{Binding FavouriteCount}" 
+                           FontSize="15"
+                           TextColor="White"
+                           Margin="6,0,0,0.5"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Cerrar sesión -->
+            <AbsoluteLayout>
+                <Button Text="Cerrar Sesión"
+                        BackgroundColor="Transparent"
+                        TextColor="Orange"
+                        Command="{Binding LogoutCommand}"
+                        Padding="10"
+                        Margin="0,20,25,0"
+                        VerticalOptions="Start"
+                        HorizontalOptions="End"
+                        AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
+                        AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
+
+            <!-- Footer -->
+            <Grid Grid.Row="2" Padding="10" BackgroundColor="#2B2B2B">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Iconos en el footer: Favorito, Buscar, Usuario -->
+                <Button Grid.Column="0" 
+                        ImageSource="user.png"
+                        WidthRequest="55" HeightRequest="55"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Center" VerticalOptions="Center"
+                        />
+
+                <Button Grid.Column="1" 
+                        ImageSource="lupa.png"
+                        WidthRequest="55" HeightRequest="55"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Center" VerticalOptions="Center"
+                        Command="{Binding NavigateToMainViewCommand}"/>
+
+                <Button Grid.Column="2" 
+                        ImageSource="favorito.png"
+                        BackgroundColor="Transparent"
+                        WidthRequest="55" HeightRequest="55"
+                        HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
